@@ -1,0 +1,56 @@
+/* pc */
+
+@media (min-width: 991px) {
+  .USA {
+    text-align: center;
+  }
+  .pin {
+    position: absolute;
+    top: 40%;
+    left: 38%;
+  }
+}
+
+/* tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-info {
+    right: 50px;
+    padding: 5px;
+  }
+  .list-info > li {
+    padding: 5px;
+  }
+  .add-t-c {
+    width: 100%;
+  }
+  .pin {
+    position: absolute;
+    top: 40%;
+    left: 37%;
+  }
+}
+
+@media (max-width: 767px) {
+  .info-to-cmt {
+    margin-bottom: 10px;
+  }
+  .contact-info {
+    right: 10px;
+    font-size: 14px;
+    padding: 5px;
+    position: sticky;
+    margin-bottom: 24px;
+  }
+  .list-info > li {
+    padding: 0;
+  }
+  .add-t-c {
+    width: 100%;
+  }
+  .pin {
+    position: absolute;
+    top: 28%;
+    left: 35%;
+  }
+}

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên Hệ</title>
+    <link rel="icon" type="image/x-icon" href="./img/loggo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/9039f40edf.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- logo -->
+         <a href="/"> <img
+            src="./img/img_header/Logo.png"
+            width="84px"
+            alt=""
+            class="logo"
+          /></a>
+          <!-- nav moblie -->
+          <div class="d-flex">
+            <div
+              class="header-cart d-lg-none me-3 d-flex justify-content-center align-items-center"
+            >
+            <a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div
+              class="position-relative d-lg-none justify-content-center align-items-center me-3 header-user d-flex"
+            >
+              <i class="fa-solid fa-user"></i>
+              <ul class="header-user-toggle position-absolute">
+                <li>
+                  <a href="../signIn/signIn.html">Đăng Nhập</a>
+                </li>
+                <li>
+                  <a class="mt-2" href="../signUp/signUp.html">Đăng Kí</a>
+                </li>
+              </ul>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="./img/img_header/Logo.png" alt="" class="logo" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- nav -->
+              <ul
+                class="navbar-nav position-relative justify-content-end flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../about/about.html"
+                    >Về Chúng Tôi</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../product/product.html">Sản Phẩm</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../new/new.html">Bảng Tin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../gallery/gallery.html"
+                    >Bộ Sưu Tập</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../contact/contact.html">Liên Hệ</a>
+                </li>
+                <span class="line-space d-lg-block d-none"></span>
+              </ul>
+              <!-- cart -->
+              <div
+                class="header-cart d-lg-flex justify-content-center align-items-center d-none ms-4"
+              >
+                <a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <!-- user -->
+              <div
+                class="position-relative d-lg-flex justify-content-center align-items-center ms-3 header-user d-none"
+              >
+                <i class="fa-solid fa-user"></i>
+                <ul class="header-user-toggle position-absolute">
+                  <li>
+                    <a href="../signIn/signIn.html">Đăng Nhập</a>
+                  </li>
+                  <li>
+                    <a class="mt-2" href="../signUp/signUp.html">Đăng Kí</a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="btn-me pt-1 pb-1 ps-1 pe-1 ms-3 d-lg-flex d-none justify-content-center align-items-center"
+              >
+                <div class="me-3 header-phone_icon">
+                  <i class="fa-solid fa-phone-flip"></i>
+                </div>
+                <small class="pe-4">84+ 35533211</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- slider -->
+    <div id="img-slider" class="position-relative"> 
+        <img width="100%" class="product_img" src="./img/product_slider.png" alt=""> 
+        <div class="product-text-content"> <h2 class="product-text-heading ">Liên hệ</h2>
+        <div class="product-nav"> <a href="/">Trang chủ</a> 
+          <span>/</span>
+           <a class="product-title" href="#">Liên hệ</a>
+          </div> 
+        </div>
+       </div>
+    <!--end slider -->
+
+    <div class="background-img">
+      <img height="700px" width="100%" src="./img/Base.png" alt="" />
+      <div class="container mt-100 main">
+        <div class="row">
+          <div class="col-lg-12 main-form">
+            <div class="tittle">
+              <img style="margin-bottom: 4px" src="./img/.png" alt="" />
+              <h5
+                style="
+                  display: inline-block;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  font-size: 14px;
+                "
+                class="price-color"
+              >
+                liên hệ với chúng tôi
+              </h5>
+            </div>
+            <h1>Vui lòng liên hệ với các chuyên gia</h1>
+            <h1>của chúng tôi</h1>
+            <div >
+              <form action="">
+                <div style="margin-top: 40px" class="row add">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <textarea
+                      placeholder="Tên của bạn"
+                      rows="1"
+                      class="info-to-cmt"
+                      type="text"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <textarea
+                      placeholder="Địa chỉ email"
+                      rows="1"
+                      class="info-to-cmt"
+                      type="email"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <textarea
+                      placeholder="Vui lòng nhập gì đó"
+                      class="write-cmt mt-20"
+                      name="write"
+                      id="write-cmt "
+                      rows="10"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <button class="add-t-c mt-20">Gửi tin nhắn</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <div class="img-map">
+        <img width="100%" src="./img/Map.png" alt="" />
+        <div class="pin">
+          <a
+            href="https://www.google.com/maps/place/C%E1%BA%A7u+C%E1%BB%93n+Kh%C6%B0%C6%A1ng,+C%C3%A1i+Kh%E1%BA%BF,+Ninh+Ki%E1%BB%81u,+C%E1%BA%A7n+Th%C6%A1,+Vi%E1%BB%87t+Nam/@10.0613815,105.7662337,15z/data=!4m5!3m4!1s0x31a087fe01e6e243:0xfd471253ef41d6cb!8m2!3d10.0539585!4d105.7757765?hl=vi-VN"
+            ><img class="pin-img" width="50px" src="/img/Pin.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="contact-info">
+        <ul class="list-info">
+          <li>
+            <h3>Thông tin liên hệ</h3>
+          </li>
+          <li>
+            <div class="location">
+              <i class="fa-solid fa-location-dot price-color"></i>
+              <p style="display: inline-block">
+                Số 3, đường Số 3, Cái Khế, Ninh Kiều
+              </p>
+              <p class="USA">Cần Thơ</p>
+            </div>
+          </li>
+          <li>
+            <div class="phone">
+              <i class="fa-solid fa-phone price-color"></i>
+              <p style="display: inline-block">84+ 35533211</p>
+            </div>
+          </li>
+          <li>
+            <div class="tiem-open">
+              <i class="fa-solid fa-clock price-color"></i>
+              <p style="display: inline-block">
+                Thứ 2 - Chủ nhật: 8h - 22h
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="help-email">
+              <i class="fa-solid fa-envelope price-color"></i>
+              <p style="display: inline-block">needhelp@company.com</p>
+            </div>
+          </li>
+          <li>
+            <div class="social-share">
+              <a href="https://www.facebook.com/lildvc"
+                ><button class="fb">
+                  <i class="fa-brands fa-facebook"></i>
+                </button>
+              </a>
+              <a href="https://twitter.com/?lang=vi"
+                ><button class="twitter">
+                  <i class="fa-brands fa-twitter"></i></button
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><button class="ins">
+                  <i class="fa-brands fa-instagram"></i></button
+              ></a>
+              <a href="https://www.pinterest.com/"
+                ><button class="pinterest">
+                  <i class="fa-brands fa-pinterest"></i></button
+              ></a>
+            </div>
+          </li>
+        </ul>
+
+        <img
+          width="40%"
+          style="position: absolute; bottom: 0; right: 0"
+          src="./img/pet.png"
+          alt=""
+        />
+      </div>
+    </div>
+     <!-- footer -->
+     <footer >
+        <div class="container position-relative">
+          <div class="footer-mail position-absolute">
+            <div class="row align-items-center">
+              <div class="col-sm-6 col-12">
+                <div class="footer-mail_sub d-flex align-items-center justify-content-center justify-content-sm-start mb-sm-0 mb-3">
+                  <i class="fa-solid fa-envelope-open-text me-3"></i>
+                  <p class="mb-0 pe-3">Đăng kí ngay để nhận cập nhật mới nhất</pp>
+                </div>
+              </div>
+              <div class="col-sm-6 col-12">
+                <form class="footer-mail_send d-flex justify-content-between pb-1">
+                  <input class="footer-mail_send_input" required type="email" placeholder="Địa chỉ email" />
+                 <button class="footer-mail_send_btn border-0"> <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer-main container">
+            <div class="row">
+              <div class="col-lg-3 col-6">
+                <div class="footer-main-social">
+                    <a href="/">
+                        <img src="./img/img_footer/Logo.png" width="84px" alt="" /> 
+                    </a>
+                    <p class="mt-3 footer-main-social_sub mb-3">
+                    Thú cưng của bạn sẽ được chăm sóc một cách tốt nhất khi đến
+                    với chúng tôi.
+                  </p>
+                  <div class="d-flex flex-wrap">
+                    <a
+                      href="#"
+                      class="footer-main-social_icon text-center text-decoration-none mt-2"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="footer-main-social_icon text-center text-decoration-none mt-2"
+                    >
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="footer-main-social_icon text-center text-decoration-none mt-2"
+                    >
+                      <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="footer-main-social_icon text-center text-decoration-none mt-2"
+                    >
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="footer-main-links">
+                  <h5 class="text-white mb-4 pt-1 mt-4">Liên kết</h5>
+                  <ul class="ps-0">
+                    <li class="footer-main-link_item">
+                      <a
+                        href="/"
+                        class="footer-main-links_link text-decoration-none"
+                        >trang Chủ</a
+                      >
+                    </li>
+                    <li class="footer-main-link_item mt-2">
+                      <a
+                        href="../about/about.html"
+                        class="footer-main-links_link text-decoration-none"
+                        >Về Chúng tôi</a
+                      >
+                    </li>
+                    <li class="footer-main-link_item mt-2">
+                      <a
+                        href="../product/product.html"
+                        class="footer-main-links_link text-decoration-none"
+                        >Sản Phẩm</a
+                      >
+                    </li>
+                    <li class="footer-main-link_item mt-2">
+                      <a
+                        href="../new/new.html"
+                        class="footer-main-links_link text-decoration-none"
+                        >Bảng Tin</a
+                      >
+                    </li>
+                    <li class="footer-main-link_item mt-2">
+                      <a
+                        href="../gallery/gallery.html"
+                        class="footer-main-links_link text-decoration-none"
+                        >Bộ Sưu tập</a
+                      >
+                    </li>
+                    <li class="footer-main-link_item mt-2">
+                      <a
+                        href="../contact/contact.html"
+                        class="footer-main-links_link text-decoration-none"
+                        >Liên Hệ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="footer-main-gallery">
+                  <h5 class="text-white mb-4 mt-4 pt-1">Thư Viện</h5>
+                  <div class="mt-4">
+                    <a class="text-decoration-none" href="../gallery/gallery.html">
+                      <img
+                         class="footer-main-gallery_img mt-2"
+                         width="30%"
+                         src="./img/img_footer/image1.png"
+                         alt=""
+                       />
+                    </a> 
+   
+                    <a class="text-decoration-none" href="../gallery/gallery.html">
+                      <img
+                         class="footer-main-gallery_img  mt-2"
+                         width="30%"
+                         src="./img/img_footer/image2.png"
+                         alt=""
+                       />
+                    </a> 
+   
+                    <a class="text-decoration-none" href="../gallery/gallery.html">
+                      <img
+                         class="footer-main-gallery_img  mt-2"
+                         width="30%"
+                         src="./img/img_footer/image3.png"
+                         alt=""
+                       />
+                    </a> 
+   
+                    <a class="text-decoration-none" href="../gallery/gallery.html">
+                      <img
+                         class="footer-main-gallery_img mt-2"
+                         width="30%"
+                         src="./img/img_footer/image4.png"
+                         alt=""
+                       />
+                    </a> 
+   
+                    <a class="text-decoration-none" href="../gallery/gallery.html">
+                      <img
+                         class="footer-main-gallery_img  mt-2"
+                         width="30%"
+                         src="./img/img_footer/image5.png"
+                         alt=""
+                       />
+                    </a> 
+   
+                    <a class="text-decoration-none" href="../gallery/gallery.html">
+                      <img
+                         class="footer-main-gallery_img  mt-2"
+                         width="30%"
+                         src="./img/img_footer/image6.png"
+                         alt=""
+                       />
+                     </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="footer-main-contact">
+                  <h5 class="text-white mb-4 mt-4 pt-1">Liên hệ</h5>
+                  <div class="d-flex">
+                    <span class="footer-main-contact_icon">
+                      <i class="fa-solid fa-location-dot"></i
+                    ></span>
+                    <p class="ms-2 footer-main-social_sub mb-3">
+                      Số 3, đường Số 3, phường Cái Khế, quận Ninh Kiều, Tp Cần Thơ
+                    </p>
+                  </div>
+                  <div class="d-flex">
+                    <span class="footer-main-contact_icon">
+                      <i class="fa-solid fa-phone"></i
+                    ></span>
+                    <p class="ms-2 footer-main-social_sub mb-3">84+ 35533211</p>
+                  </div>
+                  <div class="d-flex">
+                    <span class="footer-main-contact_icon">
+                      <i class="fa-solid fa-clock"></i>
+                    </span>
+                    <p class="ms-2 footer-main-social_sub mb-3">
+                      Thứ 2 - Chủ nhật, 8h-22h
+                    </p>
+                  </div>
+                  <div class="d-flex">
+                    <span class="footer-main-contact_icon">
+                      <i class="fa-solid fa-envelope"></i
+                    ></span>
+                    <p class="ms-2 footer-main-social_sub mb-3">wanzor@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="./js/contact.js"></script>
+  </body>
+</html>

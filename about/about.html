@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Về chúng tôi</title>
+    <link rel="icon" type="image/x-icon" href="./img/img_header/Logo.png" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./about.css" />
+  </head>
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- logo -->
+         <a href="/"> <img
+            src="./img/img_header/Logo.png"
+            width="84px"
+            alt=""
+            class="logo"
+          /></a>
+          <!-- nav moblie -->
+          <div class="d-flex">
+            <div
+              class="header-cart d-lg-none me-3 d-flex justify-content-center align-items-center"
+            >
+            <a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div
+              class="position-relative d-lg-none justify-content-center align-items-center me-3 header-user d-flex"
+            >
+              <i class="fa-solid fa-user"></i>
+              <ul class="header-user-toggle position-absolute">
+                <li>
+                  <a href="../signIn/signIn.html">Đăng Nhập</a>
+                </li>
+                <li>
+                  <a class="mt-2" href="../signUp/signUp.html">Đăng Kí</a>
+                </li>
+              </ul>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="./img/img_header/Logo.png" alt="" class="logo" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- nav -->
+              <ul
+                class="navbar-nav position-relative justify-content-end flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../about/about.html"
+                    >Về Chúng Tôi</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../product/product.html">Sản Phẩm</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../new/new.html">Bảng Tin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../gallery/gallery.html"
+                    >Bộ Sưu Tập</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../contact/contact.html">Liên Hệ</a>
+                </li>
+                <span class="line-space d-lg-block d-none"></span>
+              </ul>
+              <!-- cart -->
+              <div
+                class="header-cart d-lg-flex justify-content-center align-items-center d-none ms-4"
+              >
+                <a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <!-- user -->
+              <div
+                class="position-relative d-lg-flex justify-content-center align-items-center ms-3 header-user d-none"
+              >
+                <i class="fa-solid fa-user"></i>
+                <ul class="header-user-toggle position-absolute">
+                  <li>
+                    <a href="../signIn/signIn.html">Đăng Nhập</a>
+                  </li>
+                  <li>
+                    <a class="mt-2" href="../signUp/signUp.html">Đăng Kí</a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="btn-me pt-1 pb-1 ps-1 pe-1 ms-3 d-lg-flex d-none justify-content-center align-items-center"
+              >
+                <div class="me-3 header-phone_icon">
+                  <i class="fa-solid fa-phone-flip"></i>
+                </div>
+                <small class="pe-4">84+ 35533211</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- banner -->
+      <div id="img-slider" class="position-relative"> 
+        <img width="100%" class="product_img" src="./img/signIn_img/product_slider.png" alt=""> 
+        <div class="product-text-content"> <h2 class="product-text-heading ">Về Chúng Tôi</h2>
+        <div class="product-nav"> <a href="/">Trang chủ</a> 
+          <span>/</span>
+           <a class="product-title" href="#">Về chúng tôi</a>
+          </div> 
+        </div>
+       </div>
+       <!-- content -->
+       <div class="home-about">
+        <div class="home-about-content container">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="home-services-title p-0 text-center text-md-start">
+                <small class="home-services-title_top"
+                  ><i class="fa-solid fa-dog"></i> VỀ CHÚNG TÔI</small
+                >
+                <h2 class="home-services-title_bottom mt-1">
+                  Tìm hiểu về trung tâm
+                </h2>
+              </div>
+              <b class="mt-4 pb-2 d-block">Là một trung tâm chuyên về những loại dịch vụ cần thiết cho thú cưng</b>
+              <p class="home-slider-sub home-about-content_sub mt-4">
+                Chúng tôi có những cở sở vật chất hiện đại nhất, trang bị đầy đủ
+                mọi kiến thức về cưng. Vì thế thú cưng sẽ không ngừng phát triển
+                khi đến với chúng tôi.
+              </p>
+              <div>              
+                <div class="text-center text-md-start">
+                  <button class="btn-me position-relative mt-3">
+                    Tìm hiểu thêm
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 mt-md-0 mt-3">
+              <img src="./img/about_img/image.png" width="100%" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-facts container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div
+              class="home-facts-card mt-3 position-relative d-flex align-items-center"
+            >
+              <img
+                src="./img/facts_img/paw1.png"
+                class="home-facts-card_paw position-absolute"
+                alt=""
+              />
+              <img
+                src="./img/facts_img/customer.png"
+                class="ps-4 pe-4"
+                alt=""
+              />
+              <div class="home-facts-card_about pe-2">
+                <h2 class="home-facts-card_about_number"><span>180</span></h2>
+                <p class="mb-0">Khách hàng</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div
+              class="home-facts-card mt-3 position-relative d-flex align-items-center"
+            >
+              <img
+                src="./img/facts_img/paw2.png"
+                class="home-facts-card_paw position-absolute"
+                alt=""
+              />
+              <img
+                src="./img/facts_img/petProduct.png"
+                class="ps-4 pe-4"
+                alt=""
+              />
+              <div class="home-facts-card_about pe-2">
+                <h2 class="home-facts-card_about_number"><span>68</span>+</h2>
+                <p class="mb-0">Sản phẩm cho thú cưng</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div
+              class="home-facts-card mt-3 position-relative d-flex align-items-center"
+            >
+              <img
+                src="./img/facts_img/paw3.png"
+                class="home-facts-card_paw position-absolute"
+                alt=""
+              />
+              <img src="./img/facts_img/profess.png" class="ps-4 pe-4" alt="" />
+              <div class="home-facts-card_about pe-2">
+                <h2 class="home-facts-card_about_number"><span>28</span>+</h2>
+                <p class="mb-0">Nhân viên chuyên nghiệp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section -->
+      <div class="about-section">
+        <div class="row m-0">
+          <div class="col-12 col-lg-6 about-section-about d-flex align-items-center">
+            <div class="text-center pe-5 ps-5">
+              <h5 class="pt-5 pb-3">Những gì chúng tôi cam kết</h5>
+              <div class="mt-4 mb-4">
+                <img width="40px" src="./img/about_img/imagecicle1.png" alt="">
+                <img width="40px" src="./img/about_img/imagecicle2.png" alt="">
+                <img width="40px" src="./img/about_img/imagecicle3.png" alt="">
+              </div>
+              <p>"Tôi nhận ra rằng mỗi khi tôi mất một chú chó, nó mang đi theo một mảnh tim tôi, và mỗi chú chó mới đến với tôi lại tặng tôi một mảnh tim mình. Nếu tôi sống đủ lâu, tất cả tim tôi sẽ trở thành chúng, và tôi sẽ trở nên hào phóng và đầy yêu thương như chúng"</p>
+              <p class="pt-2 about-section-about_p">-Christine Nguyen</p>
+            </div>
+          </div>
+          <div class="col-6 d-lg-block d-none">
+            <div class="about-section-img">  
+              <div class="row">
+                <div class="col-6 p-0">
+                  <img width="100%" src="./img/about_img/image1.png" alt="">
+
+                </div>
+                <div class="col-6 p-0">
+                <img width="100%" src="./img/about_img/image2.png" alt="">
+                  
+                </div>
+                <div class="col-6 p-0">
+                <img width="100%" src="./img/about_img/image3.png" alt="">
+                  
+                </div>
+                <div class="col-6 p-0">
+                <img width="100%" src="./img/about_img/image4.png" alt="">
+                  
+                </div>
+
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- choise -->
+      <div class="about-choise container mt-5 pt-4 pb-4 mb-5">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="home-services-title p-0 text-center text-md-start">
+              <small class="home-services-title_top"
+                ><i class="fa-solid fa-dog"></i> TẠI SAO CHÚNG TÔI ĐƯỢC ĐÁNH GIÁ CAO?</small
+              >
+              <h2 class="home-services-title_bottom mt-1">
+                Tại sao chọn công ty của chúng tôi?
+              </h2>
+            </div>
+            <div class="about-choise-about d-flex align-items-center mt-4">
+              <img src="./img/about_img/imageChoise.png" class="me-3" width="100px" alt="">
+              <div class="">
+                <div class="about-choise-about_check"><i class="fa-solid fa-check me-2"></i> <small>Cơ sở vật chất hiện đại nhất</small></div>
+                <div class="about-choise-about_check"><i class="fa-solid fa-check me-2"></i> <small>Vệ sinh đúng tiêu chuẩn</small></div>
+                <div class="about-choise-about_check"><i class="fa-solid fa-check me-2"></i> <small>Nhân viên thân thiện</small></div>
+                <div class="about-choise-about_check"><i class="fa-solid fa-check me-2"></i> <small>Luôn được tư vấn 24/7</small></div>
+              </div>
+            </div>
+            <div class="about-choise-percent pt-4">
+              <b class="mb-2 d-block">Hiệu quả chăm sóc</b>
+              <div class="about-choise-percent_bar"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="about-choise-collapse shadow-sm mt-md-0 mt-3">
+              <a class="about-choise-collapse_link d-flex justify-content-between align-items-center text-decoration-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <p class="mb-0">Liệu chất lượng ở đây có tốt không?</p>
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </a>
+              <div class="collapse mt-3 about-choise-collapse_hiden" id="collapseExample">
+                <div class="">
+                  Chúng tôi có tất tần tật những công nghệ tiên tiến nhất đã được kiểm định 
+                </div>
+              </div>
+
+            </div>
+            <div class="about-choise-collapse shadow-sm mt-3">
+              <a class="about-choise-collapse_link d-flex justify-content-between align-items-center text-decoration-none" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <p class="mb-0">Thú cưng có thích ứng tốt được không?</p>
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </a>
+              <div class="collapse mt-3 about-choise-collapse_hiden" id="collapseExample1">
+                <div class="">
+                  Ở đây luôn có không khí phù hợp với tứng loại thú cưng và nhân viên ở đây rất thân thiện tạo cảm giác an toàn cho thú cưng
+                </div>
+              </div>
+            </div>
+            <div class="about-choise-collapse shadow-sm mt-3">
+              <a class="about-choise-collapse_link d-flex justify-content-between align-items-center text-decoration-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <p class="mb-0">Liệu thức ăn ở đây có phù hợp không?</p>
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </a>
+              <div class="collapse mt-3 about-choise-collapse_hiden" id="collapseExample2">
+                <div class="">
+                  Mọi sản phẩm về thực phẩm y tế đều hoàn toàn được nhập khẩu từ nước ngoài và đã được kiểm định lâm sàn
+                </div>
+              </div>
+            </div>
+            <div class="about-choise-collapse shadow-sm mt-3">
+              <a class="about-choise-collapse_link d-flex justify-content-between align-items-center text-decoration-none" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <p class="mb-0">Thú y ở đây có đảm bảo không?</p>
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </a>
+              <div class="collapse mt-3 about-choise-collapse_hiden" id="collapseExample3">
+                <div class="">
+                  Chúng tôi có đội ngủ y tế được đào tạo tại Anh quốc và đã có rất nhiều năm kinh nghiệm trong lĩnh vực này
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+      <!-- team -->
+      <div class="about-team">
+        <img src="./img/about_img/baseTeam.png" width="100%" alt="">
+        <div class="home-team position-relative">
+          <img
+            src="./img/team_img/bird.png"
+            alt=""
+            width="10%"
+            class="home-team-about_bird position-absolute"
+          />
+          <img
+            src="./img/team_img/bone.png"
+            alt=""
+            width="10%"
+            class="home-team_bone position-absolute"
+          />
+          <div class="home-services-title text-center">
+            <small class="home-services-title_top"
+              ><i class="fa-solid fa-dog"></i> NHÂN VIÊN CHĂM SÓC THÚ CƯNG</small
+            >
+            <h2 class="home-services-title_bottom mt-1">
+              Gặp gỡ những chuyên gia trong nhóm
+            </h2>
+          </div>
+          <div class="home-team-about container">
+            <div class="row justify-content-center mt-4">
+              <div class="col-md-4 col-6">
+                <div
+                  class="home-team-about_info d-flex align-items-center justify-content-center position-relative mt-4 mb-5"
+                >
+                  <img src="./img/team_img/member1.png" width="80%" alt="" />
+                  <img
+                    width="100%"
+                    src="./img/team_img/shapes1.png"
+                    class="position-absolute home-team-about-info_shapes"
+                    alt=""
+                  />
+  
+                  <div
+                    class="position-absolute home-team-about-info_icon ins shadow"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div
+                    class="position-absolute home-team-about-info_icon fb shadow"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div
+                    class="position-absolute home-team-about-info_icon twi shadow"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                </div>
+  
+                <div
+                  class="home-team-about_content home-testimonial-info-about text-center"
+                >
+                  <h5 class="mb-0">Jenny Nguyen</h5>
+                  <p>8h-17h</p>
+                </div>
+              </div>
+  
+              <div class="col-md-4 col-6">
+                <div
+                  class="home-team-about_info d-flex align-items-center justify-content-center position-relative mt-4 mb-5"
+                >
+                  <img src="./img/team_img/member2.png" width="80%" alt="" />
+                  <img
+                    width="100%"
+                    src="./img/team_img/shapes2.png"
+                    class="position-absolute home-team-about-info_shapes"
+                    alt=""
+                  />
+  
+                  <div
+                    class="position-absolute home-team-about-info_icon ins shadow"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div
+                    class="position-absolute home-team-about-info_icon fb shadow"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div
+                    class="position-absolute home-team-about-info_icon twi shadow"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                </div>
+  
+                <div
+                  class="home-team-about_content home-testimonial-info-about text-center"
+                >
+                  <h5 class="mb-0">Jun Pham</h5>
+                  <p>17h-22h</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-6">
+                <div
+                  class="home-team-about_info d-flex align-items-center justify-content-center position-relative mt-4 mb-5"
+                >
+                  <img src="./img/team_img/member3.png" width="80%" alt="" />
+                  <img
+                    width="100%"
+                    src="./img/team_img/shapes3.png"
+                    class="position-absolute home-team-about-info_shapes"
+                    alt=""
+                  />
+  
+                  <div
+                    class="position-absolute home-team-about-info_icon ins shadow"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div
+                    class="position-absolute home-team-about-info_icon fb shadow"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div
+                    class="position-absolute home-team-about-info_icon twi shadow"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                </div>
+  
+                <div
+                  class="home-team-about_content home-testimonial-info-about text-center"
+                >
+                  <h5 class="mb-0">Christine Tran</h5>
+                  <p>8h-17h</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer >
+      <div class="container position-relative">
+        <div class="footer-mail position-absolute">
+          <div class="row align-items-center">
+            <div class="col-sm-6 col-12">
+              <div class="footer-mail_sub d-flex align-items-center justify-content-center justify-content-sm-start mb-sm-0 mb-3">
+                <i class="fa-solid fa-envelope-open-text me-3"></i>
+                <p class="mb-0 pe-3">Đăng kí ngay để nhận cập nhật mới nhất</pp>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <form class="footer-mail_send d-flex justify-content-between pb-1">
+                <input class="footer-mail_send_input" required type="email" placeholder="Địa chỉ email" />
+               <button class="footer-mail_send_btn border-0"> <i class="fa-solid fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-main container">
+          <div class="row">
+            <div class="col-md-3 col-6">
+              <div class="footer-main-social">
+               <a href="/"> <img src="./img/img_footer/Logo.png" width="84px" alt="" /></a>
+                <p class="mt-3 footer-main-social_sub">
+                  Thú cưng của bạn sẽ được chăm sóc một cách tốt nhất khi đến
+                  với chúng tôi.
+                </p>
+                <div class="d-flex flex-wrap">
+                  <a
+                    href="#"
+                    class="footer-main-social_icon text-center text-decoration-none mt-2"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="footer-main-social_icon text-center text-decoration-none mt-2"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="footer-main-social_icon text-center text-decoration-none mt-2"
+                  >
+                    <i class="fa-brands fa-pinterest-p"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="footer-main-social_icon text-center text-decoration-none mt-2"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="footer-main-links">
+                <h5 class="text-white mb-4 pt-1 mt-4">Liên kết</h5>
+                <ul class="ps-0">
+                  <li class="footer-main-link_item">
+                    <a
+                      href="/"
+                      class="footer-main-links_link text-decoration-none"
+                      >trang Chủ</a
+                    >
+                  </li>
+                  <li class="footer-main-link_item mt-2">
+                    <a
+                      href="../about/about.html"
+                      class="footer-main-links_link text-decoration-none"
+                      >Về Chúng tôi</a
+                    >
+                  </li>
+                  <li class="footer-main-link_item mt-2">
+                    <a
+                      href="../product/product.html"
+                      class="footer-main-links_link text-decoration-none"
+                      >Sản Phẩm</a
+                    >
+                  </li>
+                  <li class="footer-main-link_item mt-2">
+                    <a
+                      href="../new/new.html"
+                      class="footer-main-links_link text-decoration-none"
+                      >Bảng Tin</a
+                    >
+                  </li>
+                  <li class="footer-main-link_item mt-2">
+                    <a
+                      href="../gallery/gallery.html"
+                      class="footer-main-links_link text-decoration-none"
+                      >Bộ Sưu tập</a
+                    >
+                  </li>
+                  <li class="footer-main-link_item mt-2">
+                    <a
+                      href="../contact/contact.html"
+                      class="footer-main-links_link text-decoration-none"
+                      >Liên Hệ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="footer-main-gallery">
+                <h5 class="text-white mb-4 mt-4 pt-1">Thư Viện</h5>
+                <div class="mt-4">
+                  
+                 <a class="text-decoration-none" href="../gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img mt-2"
+                      width="30%"
+                      src="./img/img_footer/image1.png"
+                      alt=""
+                    />
+                 </a> 
+
+                 <a class="text-decoration-none" href="../gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img  mt-2"
+                      width="30%"
+                      src="./img/img_footer/image2.png"
+                      alt=""
+                    />
+                 </a> 
+
+                 <a class="text-decoration-none" href="../gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img  mt-2"
+                      width="30%"
+                      src="./img/img_footer/image3.png"
+                      alt=""
+                    />
+                 </a> 
+
+                 <a class="text-decoration-none" href="../gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img mt-2"
+                      width="30%"
+                      src="./img/img_footer/image4.png"
+                      alt=""
+                    />
+                 </a> 
+
+                 <a class="text-decoration-none" href="../gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img  mt-2"
+                      width="30%"
+                      src="./img/img_footer/image5.png"
+                      alt=""
+                    />
+                 </a> 
+
+                 <a class="text-decoration-none" href="../gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img  mt-2"
+                      width="30%"
+                      src="./img/img_footer/image6.png"
+                      alt=""
+                    />
+                  </a> 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="footer-main-contact">
+                <h5 class="text-white mb-4 mt-4 pt-1">Liên hệ</h5>
+                <div class="d-flex">
+                  <span class="footer-main-contact_icon">
+                    <i class="fa-solid fa-location-dot"></i
+                  ></span>
+                  <p class="ms-2 footer-main-social_sub">
+                    Số 3, đường Số 3, phường Cái Khế, quận Ninh Kiều, Tp Cần Thơ
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <span class="footer-main-contact_icon">
+                    <i class="fa-solid fa-phone"></i
+                  ></span>
+                  <p class="ms-2 footer-main-social_sub">84+ 35533211</p>
+                </div>
+                <div class="d-flex">
+                  <span class="footer-main-contact_icon">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  <p class="ms-2 footer-main-social_sub">
+                    Thứ 2 - Chủ nhật, 8h-22h
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <span class="footer-main-contact_icon">
+                    <i class="fa-solid fa-envelope"></i
+                  ></span>
+                  <p class="ms-2 footer-main-social_sub">wanzor@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <script src="./about.js"></script>
+  </body>
+</html>

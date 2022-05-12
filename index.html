@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./home/img/img_header/Logo.png" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./home/css/style.css" />
+  </head>
+  <body class="position-relative">
+    <div class="home-base">
+      <img
+        src="./home/img/img-home/paw.png"
+        alt=""
+        class="position-absolute home-base_img"
+      />
+
+      <img
+        src="./home/img/img-home/base_light.png"
+        alt=""
+        class="position-absolute home-base_img"
+      />
+      <img
+        src="./home/img/img-home/base_blue.png"
+        alt=""
+        class="position-absolute home-base_img"
+      />
+    </div>
+    <!-- header -->
+    <header class="border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- logo -->
+         <a href="/">
+          <img
+          src="./home/img/img_header/Logo.png"
+          width="84px"
+          alt=""
+          class="logo"
+        />
+         </a>
+          <!-- nav moblie -->
+          <div class="d-flex">
+            <div
+              class="header-cart d-lg-none me-3 d-flex justify-content-center align-items-center"
+            >
+              
+              <a class="header-cart" href="./cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div
+              class="position-relative d-lg-none justify-content-center align-items-center me-3 header-user d-flex"
+            >
+              <i class="fa-solid fa-user"></i>
+              <ul class="header-user-toggle position-absolute">
+                <li>
+              <a href="./signIn/signIn.html">Đăng Nhập</a>
+                </li>
+                <li>
+              <a class="mt-2" href="./signUp/signUp.html">Đăng Kí</a>
+                </li>
+              </ul> 
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="./home/img/img_header/Logo.png" alt="" class="logo" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- nav -->
+              <ul
+                class="navbar-nav position-relative justify-content-end flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./about/about.html"
+                    >Về Chúng Tôi</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./product/product.html">Sản Phẩm</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./new/new.html">Bảng Tin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./gallery/gallery.html"
+                    >Bộ Sưu Tập</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./contact/contact.html">Liên Hệ</a>
+                </li>
+                <span class="line-space d-lg-block d-none"></span>
+              </ul>
+              <!-- cart -->
+              <div
+                class="header-cart d-lg-flex justify-content-center align-items-center d-none ms-4"
+              >
+                <a href="./cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+              <!-- user -->
+              <div
+                class="position-relative d-lg-flex justify-content-center align-items-center ms-3 header-user d-none"
+              >
+                <i class="fa-solid fa-user"></i>              
+                  <ul class="header-user-toggle position-absolute">
+                    <li>
+                  <a href="./signIn/signIn.html">Đăng Nhập</a>
+                    </li>
+                    <li>
+                  <a class="mt-2" href="./signUp/signUp.html">Đăng Kí</a>
+                    </li>
+                  </ul>                
+              </div>
+              <div
+                class="btn-me pt-1 pb-1 ps-1 pe-1 ms-3 d-lg-flex d-none justify-content-center align-items-center"
+              >
+                <div class="me-3 header-phone_icon">
+                  <i class="fa-solid fa-phone-flip"></i>
+                </div>
+                <small class="pe-4">84+ 35533211</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <div
+        class="container home-slider d-flex align-items-md-center align-items-start"
+      >
+        <div class="home-slider-content mt-md-0 mt-2">
+          <h1 class="home-slider-title">Chăm sóc thú cưng của bạn</h1>
+          <p class="home-slider-sub">
+            Thú cưng của bạn sẽ được chăm sóc một cách tốt nhất khi đến với
+            chúng tôi.
+          </p>
+          <a href="./product/product.html"><button class="btn-me home-slider-content_btn position-relative mt-3">
+            Khám phá ngay
+            <img
+              src="./home/img/slider_img/arrow.png"
+              class="position-absolute home-slider-arrow"
+              alt=""
+              width="50px"
+            />
+          </button>
+        </a>
+        </div>
+        <!-- slider -->
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade position-absolute slider-carousel"
+          data-bs-ride="carousel"
+        >
+          <div>
+            <img
+              src="./home/img/img-home/base_primary.png"
+              alt=""
+              class="position-absolute home-base_slider"
+            />
+            <img
+              src="./home/img/img-home/base_yellow.png"
+              alt=""
+              class="position-absolute home-base_slider"
+            />
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item home-slider_img active">
+              <img
+                src="./home/img/slider_img/slider1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item home-slider_img">
+              <img
+                src="./home/img/slider_img/slider2.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item home-slider_img">
+              <img
+                src="./home/img/slider_img/slider3.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item home-slider_img">
+              <img
+                src="./home/img/slider_img/slider4.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- services -->
+      <div class="home-services container">
+        <div class="home-services-title text-center">
+          <small class="home-services-title_top"
+            ><i class="fa-solid fa-dog"></i> NHỮNG GÌ CHÚNG TÔI ĐANG CUNG
+            CẤP</small
+          >
+          <h2 class="home-services-title_bottom mt-1">
+            Cung cấp những dịch vụ chất lượng nhất cho thú cưng của bạn
+          </h2>
+        </div>
+        <div class="home-services-card-list row">
+          <div class="col-lg-3 col-6 mt-2">
+            <div
+              class="home-services-cart_item d-flex flex-column shadow text-center position-relative"
+            >
+              <img
+                src="./home/img/services_img/groomingfull.png"
+                alt=""
+                width="90%"
+                class="home-services-card_img position-absolute"
+              />
+              <div
+                class="home-services-card_around d-flex align-items-center justify-content-center position-absolute shadow"
+              >
+                <img
+                  src="./home/img/services_img/grooming.png"
+                  alt=""
+                  class="home-services-card_img_icon"
+                />
+              </div>
+              <h5 class="home-services-card_title">Chải lông cho thú cưng</h5>
+              <p class="pe-sm-4 ps-sm-4 pe-0 ps-0">
+                Thường xuyên chải lông cho thú cưng sẽ giữ cho lớp lông của
+                chúng luôn bóng và khỏe mạnh.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mt-2">
+            <div
+              class="home-services-cart_item d-flex flex-column shadow text-center position-relative"
+            >
+              <img
+                src="./home/img/services_img/mealsfull.png"
+                alt=""
+                width="90%"
+                class="home-services-card_img position-absolute"
+              />
+              <div
+                class="home-services-card_around d-flex align-items-center justify-content-center position-absolute shadow"
+              >
+                <img
+                  src="./home/img/services_img/meal.png"
+                  alt=""
+                  width="40px"
+                  class="home-services-card_img_icon"
+                />
+              </div>
+              <h5 class="home-services-card_title">Thức ăn dinh dưỡng</h5>
+              <p class="pe-sm-4 ps-sm-4 pe-0 ps-0">
+                Thức ăn được kiểm định chắc chẽ về vệ sinh lẫn dinh dưỡng, giúp
+                thú cưng luôn khoẻ mạnh
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mt-2">
+            <div
+              class="home-services-cart_item d-flex flex-column shadow text-center position-relative"
+            >
+              <img
+                src="./home/img/services_img/carefull.png"
+                alt=""
+                width="90%"
+                class="home-services-card_img position-absolute"
+              />
+              <div
+                class="home-services-card_around d-flex align-items-center justify-content-center position-absolute shadow"
+              >
+                <img
+                  src="./home/img/services_img/care.png"
+                  alt=""
+                  class="home-services-card_img_icon"
+                />
+              </div>
+              <h5 class="home-services-card_title">Chăm sóc thú y</h5>
+              <p class="pe-sm-4 ps-sm-4 pe-0 ps-0">
+                Đội ngũ thú y chất lượng, chăm sóc tậm tình cho dù những điều
+                nhỏ nhất
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mt-2">
+            <div
+              class="home-services-cart_item d-flex flex-column shadow text-center position-relative"
+            >
+              <img
+                src="./home/img/services_img/activityfull.png"
+                alt=""
+                width="90%"
+                class="home-services-card_img position-absolute"
+              />
+              <div
+                class="home-services-card_around d-flex align-items-center justify-content-center position-absolute shadow"
+              >
+                <img
+                  src="./home/img/services_img/activity.png"
+                  alt=""
+                  class="home-services-card_img_icon"
+                />
+              </div>
+              <h5 class="home-services-card_title">Hoạt động của thú cưng</h5>
+              <p class="pe-sm-4 ps-sm-4 pe-0 ps-0">
+                Bên việc chăm sóc tỉ mĩ, thú cưng luôn cần vui chơi giải trí để
+                thú cưng luôn có tinh thần thoải mái nhất
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- facts -->
+      <div class="home-facts container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div
+              class="home-facts-card mt-3 position-relative d-flex align-items-center"
+            >
+              <img
+                src="./home/img/facts_img/paw1.png"
+                class="home-facts-card_paw position-absolute"
+                alt=""
+              />
+              <img
+                src="./home/img/facts_img/customer.png"
+                class="ps-4 pe-4"
+                alt=""
+              />
+              <div class="home-facts-card_about pe-2">
+                <h2 class="home-facts-card_about_number"><span>180</span></h2>
+                <p class="mb-0">Khách hàng</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div
+              class="home-facts-card mt-3 position-relative d-flex align-items-center"
+            >
+              <img
+                src="./home/img/facts_img/paw2.png"
+                class="home-facts-card_paw position-absolute"
+                alt=""
+              />
+              <img
+                src="./home/img/facts_img/petProduct.png"
+                class="ps-4 pe-4"
+                alt=""
+              />
+              <div class="home-facts-card_about pe-2">
+                <h2 class="home-facts-card_about_number"><span>68</span>+</h2>
+                <p class="mb-0">Sản phẩm cho thú cưng</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div
+              class="home-facts-card mt-3 position-relative d-flex align-items-center"
+            >
+              <img
+                src="./home/img/facts_img/paw3.png"
+                class="home-facts-card_paw position-absolute"
+                alt=""
+              />
+              <img src="./home/img/facts_img/profess.png" class="ps-4 pe-4" alt="" />
+              <div class="home-facts-card_about pe-2">
+                <h2 class="home-facts-card_about_number"><span>28</span>+</h2>
+                <p class="mb-0">Nhân viên chuyên nghiệp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about -->
+      <div class="home-about">
+        <div class="position-relative">
+          <img
+            src="./home/img/about_img/lines.png"
+            alt=""
+            class="home-about_img position-absolute d-none d-md-block"
+          />
+          <img
+            src="./home/img/about_img/image.png"
+            alt=""
+            class="home-about_img position-absolute d-none d-md-block"
+          />
+        </div>
+        <div class="home-about-content container">
+          <div class="row">
+            <div class="col-md-6 col-12 home-about-content_emty"></div>
+            <div class="col-md-6 col-12">
+              <div class="home-services-title p-0 text-center text-md-start">
+                <small class="home-services-title_top"
+                  ><i class="fa-solid fa-dog"></i> VỀ CHÚNG TÔI</small
+                >
+                <h2 class="home-services-title_bottom mt-1">
+                  Thú cưng của bạn sẽ rất an toàn và sẽ được tốt hơn về mọi mặt
+                </h2>
+              </div>
+              <p class="home-slider-sub home-about-content_sub mt-3">
+                Chúng tôi có những cở sở vật chất hiện đại nhất, trang bị đầy đủ
+                mọi kiến thức về cưng. Vì thế thú cưng sẽ không ngừng phát triển
+                khi đến với chúng tôi.
+              </p>
+              <div>
+                <p class="home-about_quote position-relative">
+                  "Các thành phần được sử dụng được lựa chọn nghiêm ngặt để đảm
+                  bảo chất lượng của các chất dinh dưỡng"
+                </p>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="d-flex flex-column">
+                      <div class="d-flex flex-grow-1">
+                        <div class="home-about_arrow">
+                          <i class="fa-solid fa-circle-arrow-right"></i>
+                        </div>
+                        <p class="fw-bold ms-1 mb-0 home-about_exp me-4">
+                          Chúng tôi có 26 năm kinh nghiệm
+                        </p>
+                      </div>
+                      <p
+                        class="home-slider-sub home-about-content_sub mt-3 flex-shrink-0"
+                      >
+                        26 năm kinh nghiệm về chăm sóc thú cưng
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="d-flex flex-column">
+                      <div class="d-flex flex-grow-1">
+                        <div class="home-about_arrow">
+                          <i class="fa-solid fa-circle-arrow-right"></i>
+                        </div>
+                        <p class="fw-bold ms-1 mb-0 home-about_exp me-4">
+                          Gặp gỡ những chú thú cưng đáng yêu
+                        </p>
+                      </div>
+                      <p
+                        class="home-slider-sub home-about-content_sub mt-3 flex-shrink-0"
+                      >
+                        Những chú thú cưng được chăm sóc chu đáo nhất
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center text-md-start">
+                  <a href="./about/about.html">
+                      <button class="btn-me position-relative mt-3">
+                      Tìm hiểu thêm
+                    </button>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- gallery -->
+      <div class="home-gallery position-relative">
+        <div class="overflow-hidden">
+          <div class="row">
+            <div class="col-lg-2 col-4 col-md-3">
+              <div class="position-relative home-gallery-about">
+                <img
+                  class="home-gallery_img rounded-3"
+                  src="./home/img/gallery_img/image5.png"
+                  height="100%"
+                  width="100%"
+                  alt=""
+                />
+                <span
+                  class="home-gallery-about_span rounded-3 d-flex justify-content-center align-items-center"
+                  >
+                  <a href="./gallery/gallery.html">
+                      <button class="border-0 shadow home-gallery-about_span_btn">
+                      Xem thêm
+                    </button>
+                    </a>
+                  </span
+                >
+              </div>
+            </div>
+            <div class="col-lg-2 col-4 col-md-3">
+              <div class="position-relative home-gallery-about">
+                <img
+                  class="home-gallery_img rounded-3"
+                  src="./home/img/gallery_img/image2.png"
+                  height="100%"
+                  width="100%"
+                  alt=""
+                />
+                <span
+                  class="home-gallery-about_span rounded-3 d-flex justify-content-center align-items-center"
+                  >
+                  <a href="./gallery/gallery.html">
+                      <button class="border-0 shadow home-gallery-about_span_btn">
+                      Xem thêm
+                    </button>
+                    </a>
+                  </span
+                >
+              </div>
+            </div>
+            <div class="col-lg-2 col-4 col-md-3">
+              <div class="position-relative home-gallery-about">
+                <img
+                  class="home-gallery_img rounded-3"
+                  src="./home/img/gallery_img/image3.png"
+                  height="100%"
+                  width="100%"
+                  alt=""
+                />
+                <span
+                  class="home-gallery-about_span rounded-3 d-flex justify-content-center align-items-center"
+                  >
+                  <a href="./gallery/gallery.html">
+                      <button class="border-0 shadow home-gallery-about_span_btn">
+                      Xem thêm
+                    </button>
+                    </a>
+                  </span
+                >
+              </div>
+            </div>
+            <div class="col-lg-2 col-4 col-md-3 d-none d-md-block">
+              <div class="position-relative home-gallery-about">
+                <img
+                  class="home-gallery_img rounded-3"
+                  src="./home/img/gallery_img/image4.png"
+                  height="100%"
+                  width="100%"
+                  alt=""
+                />
+                <span
+                  class="home-gallery-about_span rounded-3 d-flex justify-content-center align-items-center"
+                  >
+                  <a href="./gallery/gallery.html">
+                      <button class="border-0 shadow home-gallery-about_span_btn">
+                      Xem thêm
+                    </button>
+                    </a>
+                  </span
+                >
+              </div>
+            </div>
+            <div class="col-lg-2 d-none d-lg-block">
+              <div class="position-relative home-gallery-about">
+                <img
+                  class="home-gallery_img rounded-3"
+                  src="./home/img/gallery_img/image.png"
+                  height="100%"
+                  width="100%"
+                  alt=""
+                />
+
+                <span
+                  class="home-gallery-about_span rounded-3 d-flex justify-content-center align-items-center"
+                  >
+                  <a href="./gallery/gallery.html">
+                      <button class="border-0 shadow home-gallery-about_span_btn">
+                      Xem thêm
+                    </button>
+                    </a>
+                  </span
+                >
+              </div>
+            </div>
+            <div class="col-lg-2 d-none d-lg-block">
+              <div class="position-relative home-gallery-about">
+                <img
+                  class="home-gallery_img rounded-3"
+                  src="./home/img/gallery_img/image7.png"
+                  height="100%"
+                  width="100%"
+                  alt=""
+                />
+                <span
+                  class="home-gallery-about_span rounded-3 d-flex justify-content-center align-items-center"
+                  >
+                  <a href="./gallery/gallery.html">
+                      <button class="border-0 shadow home-gallery-about_span_btn">
+                      Xem thêm
+                    </button>
+                    </a>
+                  </span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-gallery_base position-absolute w-100">
+          <img
+            width="100%"
+            height="250px"
+            src="./home/img/gallery_img/base.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- testimonial -->
+      <div class="home-testimonial">
+        <div class="home-testimonial_img position-relative d-sm-block d-none">
+          <img
+            src="./home/img/testtimonial_img/image.png"
+            class="position-absolute"
+            width="50%"
+            alt=""
+          />
+          <img
+            src="./home/img/testtimonial_img/map.png"
+            alt=""
+            width="400px"
+            class="position-absolute home-testimonial_map"
+          />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-12">
+              <div class="home-services-title p-0 text-center text-sm-start">
+                <small class="home-services-title_top"
+                  ><i class="fa-solid fa-dog"></i> ĐÁNH GIÁ CỦA KHÁCH
+                  HÀNG</small
+                >
+                <h2 class="home-services-title_bottom mt-1">
+                  Khách hàng nói gì về chúng tôi?
+                </h2>
+              </div>
+
+              <div
+                id="carouselExampleDark"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner mt-4">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div
+                      class="home-testimonial-info d-flex align-items-center justify-content-center justify-content-sm-start"
+                    >
+                      <div class="home-testimonial-info-user">
+                        <img
+                          width="90%"
+                          height="90%"
+                          src="./home/img/testtimonial_img/user4.png"
+                          alt=""
+                          class="home-testimonial-info_img"
+                        />
+                      </div>
+                      <div class="home-testimonial-info-about ms-3">
+                        <div class="home-testimonial-info-about_start mb-1">
+                          <i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h5 class="mb-1">Thảo Ngân</h5>
+                        <p class="mb-0">Người nhận thú cưng</p>
+                      </div>
+                    </div>
+                    <div
+                      class="home-testimonial-content mt-4 mb-5 mb-lg-0 text-center text-sm-start"
+                    >
+                      <p>
+                        Tôi rất hài lòng khi đến với Wanzor, nhờ Wanzor mà tôi
+                        có được 1 chú cún siêu đáng yêu, tôi đã phải lòng em ấy
+                        ngay từ cái nhìn đầu tiên.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <div
+                      class="home-testimonial-info d-flex align-items-center justify-content-center justify-content-sm-start"
+                    >
+                      <div class="home-testimonial-info-user">
+                        <img
+                          width="90%"
+                          height="90%"
+                          src="./home/img/testtimonial_img/user6.png"
+                          alt=""
+                          class="home-testimonial-info_img"
+                        />
+                      </div>
+                      <div class="home-testimonial-info-about ms-3">
+                        <div class="home-testimonial-info-about_start mb-1">
+                          <i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h5 class="mb-1">Thiện Đăng</h5>
+                        <p class="mb-0">Người nhận thú cưng</p>
+                      </div>
+                    </div>
+                    <div
+                      class="home-testimonial-content mt-4 mb-5 mb-lg-0 text-center text-sm-start"
+                    >
+                      <p>
+                        Woww tôi chưa từng thấy shop thú cưng nào tư vấn nhiệt
+                        tình như vậy. Tôi sẽ trở thành khách hàng thân thiết của
+                        shop.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <div
+                      class="home-testimonial-info d-flex align-items-center justify-content-center justify-content-sm-start"
+                    >
+                      <div class="home-testimonial-info-user">
+                        <img
+                          width="90%"
+                          height="90%"
+                          src="./home/img/testtimonial_img/user5.png"
+                          alt=""
+                          class="home-testimonial-info_img"
+                        />
+                      </div>
+                      <div class="home-testimonial-info-about ms-3">
+                        <div class="home-testimonial-info-about_start mb-1">
+                          <i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h5 class="mb-1">Trúc Linh</h5>
+                        <p class="mb-0">Người mua sản phẩm</p>
+                      </div>
+                    </div>
+                    <div
+                      class="home-testimonial-content mt-4 mb-5 mb-lg-0 text-center text-sm-start"
+                    >
+                      <p>
+                        Shop không chỉ bán đồ đa dạng mà còn rẽ nữa, tư vấn lại
+                        nhiệt tình, một tim cho shop.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12"></div>
+        </div>
+      </div>
+      <!-- team -->
+      <div class="home-team position-relative">
+        <img
+          src="./home/img/team_img/bird.png"
+          alt=""
+          width="10%"
+          class="home-team-about_bird position-absolute"
+        />
+        <img
+          src="./home/img/team_img/bone.png"
+          alt=""
+          width="10%"
+          class="home-team_bone position-absolute"
+        />
+        <div class="home-services-title text-center">
+          <small class="home-services-title_top"
+            ><i class="fa-solid fa-dog"></i> NHÂN VIÊN CHĂM SÓC THÚ CƯNG</small
+          >
+          <h2 class="home-services-title_bottom mt-1">
+            Gặp gỡ những chuyên gia trong nhóm
+          </h2>
+        </div>
+        <div class="home-team-about container">
+          <div class="row justify-content-center mt-4">
+            <div class="col-md-4 col-6">
+              <div
+                class="home-team-about_info d-flex align-items-center justify-content-center position-relative mt-4 mb-5"
+              >
+                <img src="./home/img/team_img/member1.png" width="80%" alt="" />
+                <img
+                  width="100%"
+                  src="./home/img/team_img/shapes1.png"
+                  class="position-absolute home-team-about-info_shapes"
+                  alt=""
+                />
+
+                <div
+                  class="position-absolute home-team-about-info_icon ins shadow"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div
+                  class="position-absolute home-team-about-info_icon fb shadow"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div
+                  class="position-absolute home-team-about-info_icon twi shadow"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+              <div
+                class="home-team-about_content home-testimonial-info-about text-center"
+              >
+                <h5 class="mb-0">Jenny Nguyen</h5>
+                <p>8h-17h</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-6">
+              <div
+                class="home-team-about_info d-flex align-items-center justify-content-center position-relative mt-4 mb-5"
+              >
+                <img src="./home/img/team_img/member2.png" width="80%" alt="" />
+                <img
+                  width="100%"
+                  src="./home/img/team_img/shapes2.png"
+                  class="position-absolute home-team-about-info_shapes"
+                  alt=""
+                />
+
+                <div
+                  class="position-absolute home-team-about-info_icon ins shadow"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div
+                  class="position-absolute home-team-about-info_icon fb shadow"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div
+                  class="position-absolute home-team-about-info_icon twi shadow"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+              <div
+                class="home-team-about_content home-testimonial-info-about text-center"
+              >
+                <h5 class="mb-0">Jun Pham</h5>
+                <p>17h-22h</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div
+                class="home-team-about_info d-flex align-items-center justify-content-center position-relative mt-4 mb-5"
+              >
+                <img src="./home/img/team_img/member3.png" width="80%" alt="" />
+                <img
+                  width="100%"
+                  src="./home/img/team_img/shapes3.png"
+                  class="position-absolute home-team-about-info_shapes"
+                  alt=""
+                />
+
+                <div
+                  class="position-absolute home-team-about-info_icon ins shadow"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div
+                  class="position-absolute home-team-about-info_icon fb shadow"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div
+                  class="position-absolute home-team-about-info_icon twi shadow"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+              <div
+                class="home-team-about_content home-testimonial-info-about text-center"
+              >
+                <h5 class="mb-0">Christine Tran</h5>
+                <p>8h-17h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- quote -->
+      <div class="home-quote">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-none d-lg-block position-relative">
+              <img
+                width="60%"
+                src="./home/img/quote_img/cat.png"
+                class="position-absolute home-quote_img"
+                alt=""
+              />
+              <img
+                width="60%"
+                src="./home/img/quote_img/Toy 2.png"
+                class="position-absolute home-quote_img"
+                alt=""
+              />
+              <img
+                width="35%"
+                src="./home/img/quote_img/Toy 1.png"
+                class="position-absolute home-quote_img"
+                alt=""
+              />
+              <div class="position-absolute home-quote_text">
+                <h4 class="position-absolute home-quote_text_content">Let's</h4>
+                <h1 class="position-absolute home-quote_text_content">make</h1>
+                <h4 class="position-absolute home-quote_text_content">new</h4>
+                <h1 class="position-absolute home-quote_text_content">
+                  Friend
+                </h1>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 col-12 d-flex justify-content-center justify-content-xl-start"
+            >
+              <div class="home-quote-form">
+                <div class="home-services-title text-center pt-5">
+                  <small class="home-services-title_top"
+                    ><i class="fa-solid fa-dog"></i> ĐẶT NGAY</small
+                  >
+                  <h2 class="home-services-title_bottom mt-1">
+                    Nhận báo giá ngay
+                  </h2>
+                </div>
+                <form action="">
+                  <select required class="w-100 form-select home-quote-form_select">
+                    <option value="">Chọn thú cưng</option>
+                    <option value="Chó">Chó</option>
+                    <option value="Mèo">Mèo</option>
+                    <option value="Thỏ">Thỏ</option>
+                  </select>
+                  <select required class="w-100 form-select home-quote-form_select">
+                    <option value="">Chọn loại dịch vụ</option>
+                    <option value="Combo 1 ăn uống + khám chữa trị">
+                      Combo 1 ăn uống + khám chữa trị
+                    </option>
+                    <option value="Combo 2 ăn uống + khám chữa trị + tỉa lông">
+                      Combo 2 ăn uống + khám chữa trị + tỉa lông
+                    </option>
+                    <option
+                      value="Combo 2 ăn uống + khám chữa trị + tỉa lông + vui chơi trong khu giả trí"
+                    >
+                      Combo 2 ăn uống + khám chữa trị + tỉa lông + vui chơi
+                      trong khu giải trí
+                    </option>
+                  </select>
+                  <input
+                  required
+                    type="tel"
+                    class="home-quote-form_select w-100"
+                    placeholder="Nhập số điện thoại"
+                  />
+                  <div class="home-quote-form_range mt-3">
+                    <output>1</output> ngày
+                    <input
+                    required
+                      oninput="this.previousElementSibling.value = this.value"
+                      type="range"
+                      class="form-range custom-range mt-2"
+                      min="1"
+                      max="7"
+                      step="1"
+                      value="1"
+                      id="customRange3"
+                    />
+                  </div>
+                  <button class="btn-me home-quote-form_btn w-100 mt-3">
+                    Gửi Yêu Cầu
+                  </button>
+                  <small
+                    class="d-block home-quote-form_sub text-center mt-3 ps-5 pe-5 pb-5"
+                  >
+                    Chúng tôi sẽ phản hồi cho bạn nhanh nhất có thể
+                  </small>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- blog -->
+      <div class="home-blog position-relative">
+        <img
+          src="./home/img/blog_img/base.png"
+          width="100%"
+          height="400px"
+          class="position-absolute home-blog_base"
+          alt=""
+        />
+        <img
+          src="./home/img/blog_img/subBase.png"
+          width="100%"
+          class="position-absolute home-blog_base"
+          alt=""
+        />
+        <div class="home-blog-content mt-5 container">
+          <div
+            class="home-services-title home-blog-content_title p-0 text-center text-md-start"
+          >
+            <small class="home-services-title_top"
+              ><i class="fa-solid fa-dog"></i> Bài Viết</small
+            >
+            <h2 class="home-services-title_bottom mt-1">
+              Tin tức và bài báo mới nhất
+            </h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6 col-8">
+              <div class="home-blog-content-cart shadow mb-5 mt-4">
+                <div class="position-relative">
+                  <img
+                    class="home-blog-content-cart_img"
+                    src="./home/img/blog_img/image.png"
+                    width="100%"
+                    height="200px"
+                    alt=""
+                  />
+                  <span class="position-absolute home-blog-content-cart_time"
+                    >30-4-2022</span
+                  >
+                </div>
+                <div
+                  class="ps-3 pe-3 home-blog-content-cart-about d-flex flex-column pt-3"
+                >
+                  <div class="home-services-card_title p-0">
+                    <div class="home-blog-content-cart_state mb-2">
+                      <span class="home-blog-content-cart_state_span me-2"
+                        ><i class="fa-solid fa-tag me-1"></i
+                        ><span>Tài năng</span></span
+                      >
+                      <span class="home-blog-content-cart_state_span"
+                        ><i class="fa-solid fa-comments me-1"></i
+                        ><span>23 Bình luận</span></span
+                      >
+                    </div>
+                    <h3>Chú chó biết đánh đàn piano</h3>
+                  </div>
+                  <div class="home-quote-form_sub">
+                    <p class="home-quote-form_sub home-blog-content-cart_text">
+                      Chú chó Buddy Mercury thường xuyên tự chơi đàn piano bằng
+                      hai chân trước, thậm chí còn vừa đàn vừa "hát" bằng cách
+                      hú lên từng hồi dài. Những khoảnh khắc cực phiêu đó đều
+                      được chủ ghi lại và đăng tải trên kênh Youtube mang tên
+                      chú chó.
+                    </p>
+                    <a href="./new/new.html" class="btn-me mb-4">Xem thêm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-8">
+              <div class="home-blog-content-cart shadow mb-5 mt-4">
+                <div class="position-relative">
+                  <img
+                    class="home-blog-content-cart_img"
+                    src="./home/img/blog_img/image2.png"
+                    width="100%"
+                    height="200px"
+                    alt=""
+                  />
+                  <span class="position-absolute home-blog-content-cart_time"
+                    >29-4-2022</span
+                  >
+                </div>
+                <div
+                  class="ps-3 pe-3 home-blog-content-cart-about d-flex flex-column pt-3"
+                >
+                  <div class="home-services-card_title p-0">
+                    <div class="home-blog-content-cart_state mb-2">
+                      <span class="home-blog-content-cart_state_span me-2"
+                        ><i class="fa-solid fa-tag me-1"></i
+                        ><span>Chăm sóc</span></span
+                      >
+                      <span class="home-blog-content-cart_state_span"
+                        ><i class="fa-solid fa-comments me-1"></i
+                        ><span>10 Bình luận</span></span
+                      >
+                    </div>
+                    <h3>Chơi với mèo đúng cách</h3>
+                  </div>
+                  <div class="home-quote-form_sub">
+                    <p class="home-quote-form_sub home-blog-content-cart_text">
+                      Vui đùa với mèo là cách tốt nhất để tăng cường mối quan hệ
+                      của cả hai, cũng như khắc phục sự nhàm chán và căng thẳng.
+                      Bạn sẽ tìm thấy nhiều niềm vui và thậm chí có thể bắt đầu
+                      tự hỏi rằng có phải chúng đang cười với mình hay không.
+                    </p>
+                    <a href="./new/new.html" class="btn-me mb-4">Xem thêm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-8">
+              <div class="home-blog-content-cart shadow mb-5 mt-4">
+                <div class="position-relative">
+                  <img
+                    class="home-blog-content-cart_img"
+                    src="./home/img/blog_img/image3.png"
+                    width="100%"
+                    height="200px"
+                    alt=""
+                  />
+                  <span class="position-absolute home-blog-content-cart_time"
+                    >27-4-2022</span
+                  >
+                </div>
+                <div
+                  class="ps-3 pe-3 home-blog-content-cart-about d-flex flex-column pt-3"
+                >
+                  <div class="home-services-card_title p-0">
+                    <div class="home-blog-content-cart_state mb-2">
+                      <span class="home-blog-content-cart_state_span me-2"
+                        ><i class="fa-solid fa-tag me-1"></i
+                        ><span>Giáo dục</span></span
+                      >
+                      <span class="home-blog-content-cart_state_span"
+                        ><i class="fa-solid fa-comments me-1"></i
+                        ><span>02 Bình luận</span></span
+                      >
+                    </div>
+                    <h3>Trẻ con chơi với thú cưng sẽ hoạt bát hơn</h3>
+                  </div>
+                  <div class="home-quote-form_sub">
+                    <p class="home-quote-form_sub home-blog-content-cart_text">
+                      Chú chó Buddy Mercury thường xuyên tự chơi đàn piano bằng
+                      hai chân trước, thậm chí còn vừa đàn vừa "hát" bằng cách
+                      hú lên từng hồi dài. Những khoảnh khắc cực phiêu đó đều
+                      được chủ ghi lại và đăng tải trên kênh Youtube mang tên
+                      chú chó.
+                    </p>
+                    <a href="./new/new.html" class="btn-me mb-4">Xem thêm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer >
+      <div class="container position-relative">
+        <div class="footer-mail position-absolute">
+          <div class="row align-items-center">
+            <div class="col-sm-6 col-12">
+              <div class="footer-mail_sub d-flex align-items-center justify-content-center justify-content-sm-start mb-sm-0 mb-3">
+                <i class="fa-solid fa-envelope-open-text me-3"></i>
+                <p class="mb-0 pe-3">Đăng kí ngay để nhận cập nhật mới nhất</pp>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <form class="footer-mail_send d-flex justify-content-between pb-1">
+                <input class="footer-mail_send_input" required type="email" placeholder="Địa chỉ email" />
+               <button class="footer-mail_send_btn border-0"> <i class="fa-solid fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-main container">
+          <div class="row">
+            <div class="col-md-3 col-6">
+              <div class="footer-main-social">
+               <a href="/"> <img src="./home/img/img_footer/Logo.png" width="84px" alt="" /></a>
+                <p class="mt-3 footer-main-social_sub">
+                  Thú cưng của bạn sẽ được chăm sóc một cách tốt nhất khi đến
+                  với chúng tôi.
+                </p>
+                <div class="d-flex flex-wrap">
+                  <a
+                    href="#"
+                    class="footer-main-social_icon text-center text-decoration-none mt-2"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="footer-main-social_icon text-center text-decoration-none mt-2"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="footer-main-social_icon text-center text-decoration-none mt-2"
+                  >
+                    <i class="fa-brands fa-pinterest-p"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="footer-main-social_icon text-center text-decoration-none mt-2"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="footer-main-links">
+                <h5 class="text-white mb-4 pt-1 mt-4">Liên kết</h5>
+                <ul class="ps-0">
+                  <li class="footer-main-link_item">
+                    <a
+                      href="/"
+                      class="footer-main-links_link text-decoration-none"
+                      >trang Chủ</a
+                    >
+                  </li>
+                  <li class="footer-main-link_item mt-2">
+                    <a
+                      href="./about/about.html"
+                      class="footer-main-links_link text-decoration-none"
+                      >Về Chúng tôi</a
+                    >
+                  </li>
+                  <li class="footer-main-link_item mt-2">
+                    <a
+                      href="./product/product.html"
+                      class="footer-main-links_link text-decoration-none"
+                      >Sản Phẩm</a
+                    >
+                  </li>
+                  <li class="footer-main-link_item mt-2">
+                    <a
+                      href="./new/new.html"
+                      class="footer-main-links_link text-decoration-none"
+                      >Bảng Tin</a
+                    >
+                  </li>
+                  <li class="footer-main-link_item mt-2">
+                    <a
+                      href="./gallery/gallery.html"
+                      class="footer-main-links_link text-decoration-none"
+                      >Bộ Sưu tập</a
+                    >
+                  </li>
+                  <li class="footer-main-link_item mt-2">
+                    <a
+                      href="./contact/contact.html"
+                      class="footer-main-links_link text-decoration-none"
+                      >Liên Hệ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="footer-main-gallery">
+                <h5 class="text-white mb-4 mt-4 pt-1">Thư Viện</h5>
+                <div class="mt-4">
+                  
+                 <a class="text-decoration-none" href="./gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img mt-2"
+                      width="30%"
+                      src="./home/img/img_footer/image1.png"
+                      alt=""
+                    />
+                 </a> 
+
+                 <a class="text-decoration-none" href="./gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img  mt-2"
+                      width="30%"
+                      src="./home/img/img_footer/image2.png"
+                      alt=""
+                    />
+                 </a> 
+
+                 <a class="text-decoration-none" href="./gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img  mt-2"
+                      width="30%"
+                      src="./home/img/img_footer/image3.png"
+                      alt=""
+                    />
+                 </a> 
+
+                 <a class="text-decoration-none" href="./gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img mt-2"
+                      width="30%"
+                      src="./home/img/img_footer/image4.png"
+                      alt=""
+                    />
+                 </a> 
+
+                 <a class="text-decoration-none" href="./gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img  mt-2"
+                      width="30%"
+                      src="./home/img/img_footer/image5.png"
+                      alt=""
+                    />
+                 </a> 
+
+                 <a class="text-decoration-none" href="./gallery/gallery.html">
+                   <img
+                      class="footer-main-gallery_img  mt-2"
+                      width="30%"
+                      src="./home/img/img_footer/image6.png"
+                      alt=""
+                    />
+                  </div>
+                 </a> 
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="footer-main-contact">
+                <h5 class="text-white mb-4 mt-4 pt-1">Liên hệ</h5>
+                <div class="d-flex">
+                  <span class="footer-main-contact_icon">
+                    <i class="fa-solid fa-location-dot"></i
+                  ></span>
+                  <p class="ms-2 footer-main-social_sub">
+                    Số 3, đường Số 3, phường Cái Khế, quận Ninh Kiều, Tp Cần Thơ
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <span class="footer-main-contact_icon">
+                    <i class="fa-solid fa-phone"></i
+                  ></span>
+                  <p class="ms-2 footer-main-social_sub">84+ 35533211</p>
+                </div>
+                <div class="d-flex">
+                  <span class="footer-main-contact_icon">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  <p class="ms-2 footer-main-social_sub">
+                    Thứ 2 - Chủ nhật, 8h-22h
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <span class="footer-main-contact_icon">
+                    <i class="fa-solid fa-envelope"></i
+                  ></span>
+                  <p class="ms-2 footer-main-social_sub">wanzor@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./home/home.js"></script>
+  </body>
+</html>
