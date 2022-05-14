@@ -60,12 +60,19 @@ let items = [];
 let oderNums = [];
 let itemSums = [];
 const cartTable = document.querySelector(".cart-table");
+// get data localstorage
 for (let i = 0; i < localStorage.length; i++) {
   const keyProduct = localStorage.key(i);
-  items.push(listItems[keyProduct]);
-  oderNums.push(parseInt(localStorage.getItem(keyProduct)));
-  itemSums.push(listItems[keyProduct].price * oderNums[i]);
+  if (listItems[keyProduct]) {
+    items.push(listItems[keyProduct]);
+    oderNums.push(parseInt(localStorage.getItem(keyProduct)));
+    for (let j = 0; j < oderNums.length; j++) {
+      var result = listItems[keyProduct].price * oderNums[j];
+    }
+    itemSums.push(result);
+  }
 }
+console.log(itemSums, oderNums);
 // show item cart
 function showItem() {
   const itemsHtml = items.map((item, i) => {
@@ -101,27 +108,28 @@ function showItem() {
 }
 // calc
 function totalCost() {
-  const cartSum = document.querySelector(".cart-total_sum");
-  console.log(itemSums);
-  const sumItem = itemSums.reduce((acc, item) => {
-    return acc + item;
-  }, 0);
-  cartSum.innerText = sumItem + "đ";
-  const totalEnd = document.querySelector(".cart-total_end");
-  const btnPay = document.querySelector(".btn-pay");
-  const totalShip = document.querySelector(".cart-total_ship");
-  if (items.length !== 0) {
-    totalEnd.innerText = sumItem + 20000 + "đ";
-    totalShip.innerText = 20000 + "đ";
-    btnPay.addEventListener("click", () => {
-      alert("Cảm ơn bạn đã thanh toán");
-    });
-  } else {
-    totalEnd.innerText = 0 + "đ";
-    totalShip.innerText = 0 + "đ";
-    btnPay.addEventListener("click", () => {
-      alert("Vui lòng thêm sản phẩm để thanh toán");
-    });
+  if (itemSums) {
+    const cartSum = document.querySelector(".cart-total_sum");
+    const sumItem = itemSums.reduce((acc, item) => {
+      return acc + item;
+    }, 0);
+    cartSum.innerText = sumItem + "đ";
+    const totalEnd = document.querySelector(".cart-total_end");
+    const btnPay = document.querySelector(".btn-pay");
+    const totalShip = document.querySelector(".cart-total_ship");
+    if (items.length !== 0) {
+      totalEnd.innerText = sumItem + 20000 + "đ";
+      totalShip.innerText = 20000 + "đ";
+      btnPay.addEventListener("click", () => {
+        alert("Cảm ơn bạn đã thanh toán");
+      });
+    } else {
+      totalEnd.innerText = 0 + "đ";
+      totalShip.innerText = 0 + "đ";
+      btnPay.addEventListener("click", () => {
+        alert("Vui lòng thêm sản phẩm để thanh toán");
+      });
+    }
   }
 }
 // footer email
