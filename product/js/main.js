@@ -7,23 +7,6 @@ headerUser.forEach((e, i) => {
   });
 });
 
-var $slider = $("#slider");
-var $fill = $(".bar .fill");
-
-function setBar() {
-  $fill.css("width", $slider.val() + "%");
-}
-
-$slider.on("input", setBar);
-setBar();
-
-const sliderr = document.querySelector("input");
-const valuee = document.querySelector(".valuee");
-valuee.textContent = sliderr.value;
-slider.oninput = function () {
-  valuee.textContent = this.value;
-};
-
 const allFilterItems = document.querySelectorAll(".product-item_fillter");
 const allFilterBtns = document.querySelectorAll(".filter-btn");
 
